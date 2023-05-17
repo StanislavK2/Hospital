@@ -153,7 +153,7 @@ public class LogInScreen extends AppCompatActivity {
     public void onBackPressed() {
         counter++;
         if (counter == 1){
-            Toast.makeText(this,"double backpress exit the apps",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"двойное нажатие для выхода из приложения",Toast.LENGTH_LONG).show();
         }
         else if (counter == 3){
             super.onBackPressed();

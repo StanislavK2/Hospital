@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitalhelper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".VideoFullScreen"></activity>
+        <activity android:name=".WatchProfileImageAgain" />
+        <activity android:name=".ForgotPasswordScreen" />
+        <activity android:name=".ForgotpasswordActivity" />
+        <activity android:name=".ForgotpasswordOTPVerification" />
+        <activity android:name=".ForgotPasswordOTPSend" />
+        <activity android:name=".WatchProfileImage" />
+        <activity android:name=".Doctor_Detail" />
+        <activity android:name=".Banner_Four" />
+        <activity android:name=".BloodDonateUser" />
+        <activity android:name=".ProfileEdit" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".Videos" />
+        <activity android:name=".Doctor" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".BloodDonate" />
+        <activity android:name=".BloodRequest" />
+        <activity android:name=".Banner_Three" />
+        <activity android:name=".Banner_Two" />
+        <activity android:name=".Banner_One" />
+        <activity android:name=".SignUpScreen" />
+        <activity
+            android:name=".HomeScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".LogInScreen" />
+        <activity android:name=".Intro_Screen" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

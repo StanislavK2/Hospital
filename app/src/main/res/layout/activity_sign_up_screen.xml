@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpScreen"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/back_button_relative"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:layout_marginLeft="@dimen/size_18dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_arrow_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logo_text_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_32dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/login_logo"
+                    android:layout_width="@dimen/size_70dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:src="@drawable/heading_logo"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/welcome_text_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_below="@+id/logo_text_relative">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let's get started !\nSign up"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_17dp"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sub_title_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcome_text_relative"
+                android:layout_marginTop="@dimen/size_15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Enter your detail\nWe will help our site"
+                    android:textAlignment="center"
+                    android:textColor="@color/light_poison_color"
+                    android:textSize="@dimen/size_14dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/select_photo_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_17dp"
+                android:layout_below="@+id/sub_title_relative">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please Select Photo"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_13dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginTop="@dimen/size_26dp"/>
+
+                <Button
+                    android:id="@+id/profile_photo_chooser"
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:text="Choose"
+                    android:background="@drawable/button_style_four"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/size_15dp"
+                    android:layout_marginTop="@dimen/size_21dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profile_photo_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:layout_below="@+id/select_photo_relative">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_photo_set"
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="@dimen/size_150dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/intro_desription_color"
+                    android:src="@drawable/profile_photo"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_firstname_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_photo_relative"
+                android:layout_marginTop="@dimen/size_17dp">
+
+                <TextView
+                    android:id="@+id/signup_firstname_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="First Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_12dp" />
+
+                <EditText
+                    android:id="@+id/signup_firstname_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_below="@id/signup_firstname_textview"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_marginRight="@dimen/size_25dp"
+                    android:background="@drawable/edit_text_style"
+                    android:fontFamily="@font/montserratmedium"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:hint="Marlin"
+                    android:textColorHint="@color/tab_indicator_grey"
+                    android:backgroundTint="@color/similarwhite"
+                    android:textColor="@color/title_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_lastname_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_firstname_relative"
+                android:layout_marginTop="@dimen/size_22dp">
+
+                <TextView
+                    android:id="@+id/signup_lastname_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Last Name"
+                    android:textStyle="bold"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_12dp" />
+
+                <EditText
+                    android:id="@+id/signup_lastname_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_below="@id/signup_lastname_textview"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_marginRight="@dimen/size_25dp"
+                    android:background="@drawable/edit_text_style"
+                    android:fontFamily="@font/montserratmedium"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:backgroundTint="@color/similarwhite"
+                    android:text=""
+                    android:hint="Patterson"
+                    android:textColorHint="@color/tab_indicator_grey"
+                    android:textColor="@color/title_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_email_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_lastname_relative"
+                android:layout_marginTop="@dimen/size_22dp">
+
+                <TextView
+                    android:id="@+id/signup_email_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_12dp" />
+
+                <EditText
+                    android:id="@+id/signup_email_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_below="@id/signup_email_textview"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="@dimen/size_25dp"
+                    android:background="@drawable/edit_text_style"
+                    android:backgroundTint="@color/similarwhite"
+                    android:fontFamily="@font/montserratmedium"
+                    android:hint="Yourname@email.com"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textColor="@color/title_color"
+                    android:textColorHint="@color/tab_indicator_grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_mobile_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_email_relative"
+                android:layout_marginTop="@dimen/size_22dp">
+
+                <TextView
+                    android:id="@+id/signup_mobile_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Mobile Number"
+                    android:textStyle="bold"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_12dp" />
+
+                <EditText
+                    android:id="@+id/signup_mobile_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_below="@id/signup_mobile_textview"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_marginRight="@dimen/size_25dp"
+                    android:background="@drawable/edit_text_style"
+                    android:fontFamily="@font/montserratmedium"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:maxLength="10"
+                    android:backgroundTint="@color/similarwhite"
+                    android:text=""
+                    android:hint="Ex.8090807090"
+                    android:textColorHint="@color/tab_indicator_grey"
+                    android:textColor="@color/title_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_gender_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_mobile_relative"
+                android:layout_marginTop="@dimen/size_17dp">
+
+                <TextView
+                    android:id="@+id/signup_gender_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Gender"
+                    android:textStyle="bold"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_gendergroup_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_gender_relative"
+                android:layout_marginTop="@dimen/size_7dp">
+
+                <RadioGroup
+                    android:id="@+id/signup_genderbutton_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiomale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/size_50dp"
+                        android:buttonTint="@color/light_poison_color"
+                        android:textColor="@color/title_color"
+                        android:fontFamily="@font/montserratregular"
+                        android:backgroundTint="@color/colorPrimary"
+                        tools:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/radiofemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:padding="16dp"
+                        android:layout_marginLeft="@dimen/size_46dp"
+                        android:buttonTint="@color/light_poison_color"
+                        android:textColor="@color/title_color"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserratregular"
+                        android:backgroundTint="@color/colorPrimary"
+                        tools:visibility="visible" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_birthday_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_gendergroup_relative"
+                android:layout_marginTop="@dimen/size_17dp">
+
+                <TextView
+                    android:id="@+id/signup_birthday_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Birthdate"
+                    android:textStyle="bold"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_12dp" />
+
+                <EditText
+                    android:id="@+id/signup_birthday_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_below="@+id/signup_birthday_text"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_marginRight="@dimen/size_25dp"
+                    android:background="@drawable/edit_text_style"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserratmedium"
+                    android:padding="@dimen/size_10dp"
+                    android:backgroundTint="@color/similarwhite"
+                    android:text=""
+                    android:hint="Ex.01/01/2020"
+                    android:textColorHint="@color/tab_indicator_grey"
+                    android:textColor="@color/title_color" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signup_password_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signup_birthday_relative"
+                android:layout_marginTop="@dimen/size_17dp">
+
+                <TextView
+                    android:id="@+id/signup_password_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Password"
+                    android:textStyle="bold"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_12dp" />
+
+                <EditText
+                    android:id="@+id/signup_password_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_below="@+id/signup_password_text"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_marginRight="@dimen/size_25dp"
+                    android:background="@drawable/edit_text_style"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/montserratmedium"
+                    android:padding="@dimen/size_10dp"
+                    android:backgroundTint="@color/similarwhite"
+                    android:text=""
+                    android:hint="Marlin@123"
+                    android:textColorHint="@color/tab_indicator_grey"
+                    android:textColor="@color/title_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Register_button_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_password_relative"
+                android:layout_marginTop="@dimen/size_45dp">
+
+                <Button
+                    android:id="@+id/Register_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_marginLeft="@dimen/size_23dp"
+                    android:layout_marginRight="@dimen/size_25dp"
+                    android:background="@drawable/button_style_four"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Join us"
+                    android:textSize="@dimen/size_12dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Register_button_relative"
+                android:layout_marginTop="@dimen/size_17dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By continuing, you agree to accept our\nPrivacy Policy and Terms of Service"
+                    android:textColor="@color/title_color"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/size_11dp"
+                    android:padding="@dimen/size_20dp"
+                    android:lineSpacingExtra="5dp"
+                    android:fontFamily="@font/montserratmedium"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

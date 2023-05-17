@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Banner_Three">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_relative_baner1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/toolbarpannel">
+
+        <RelativeLayout
+            android:id="@+id/back_relative"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_marginTop="@dimen/size_7dp"
+            android:layout_marginLeft="@dimen/size_15dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back_button_benner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_relative_baner1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/text_banner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginStart="@dimen/size_20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food Canteen"
+                    android:fontFamily="@font/montserratmedium"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/size_18dp"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_banner1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_239dp"
+                    android:src="@drawable/food"
+                    android:padding="@dimen/size_12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_banner"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:layout_marginEnd="@dimen/size_20dp"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:layout_marginBottom="@dimen/size_20dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_13dp"
+                    android:textColor="@color/intro_desription_color"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserratregular"
+                    android:lineSpacingExtra="@dimen/size_2dp"
+                    android:text="The hospital Canteen is located\nin the hospital to serve the patients, attendants and visitors.\n\nThe hygienic food served in the canteen at affordable rates is found very useful \nfor all those receiving Health-Care services from the hospital.\n\n
+The carteen is open for services between 5:30 AM to 9:30 PM." />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

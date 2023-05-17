@@ -219,7 +219,7 @@ public class ProfileEdit extends AppCompatActivity {
                             @Override
                             public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
                                 float percentage = (100 * snapshot.getBytesTransferred()) / snapshot.getTotalByteCount();
-                                dialog.setMessage("Uploading " + (int) percentage + " %");
+                                dialog.setMessage("Загрузка " + (int) percentage + " %");
                             }
                         });
             } else {

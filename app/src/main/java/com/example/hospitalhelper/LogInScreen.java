@@ -92,7 +92,7 @@ public class LogInScreen extends AppCompatActivity {
         
         if(validate())
         {
-            mprogress.setMessage("Loading...");
+            mprogress.setMessage("Загрузка...");
             mprogress.show();
             mAuth = FirebaseAuth.getInstance();
 

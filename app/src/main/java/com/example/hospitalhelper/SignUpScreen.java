@@ -164,8 +164,8 @@ public class SignUpScreen extends AppCompatActivity{
             final String Password = Passwords.getText().toString().trim();
 
             ProgressDialog dialog1 = new ProgressDialog(SignUpScreen.this);
-            dialog1.setMessage("Please wait check in Server" +
-                    " You are already exist or not!");
+            dialog1.setMessage("Пожалуйста, подождите, проверьте сервер" +
+                    " Ваш аккаунт уже существует!");
             dialog1.setCancelable(false);
             dialog1.show();
 
@@ -254,7 +254,7 @@ public class SignUpScreen extends AppCompatActivity{
                                                             @Override
                                                             public void onProgress(@NonNull UploadTask.TaskSnapshot snapshot) {
                                                                 float percentage = (100 * snapshot.getBytesTransferred()) / snapshot.getTotalByteCount();
-                                                                dialog.setMessage("Uploading " + (int) percentage + " %");
+                                                                dialog.setMessage("Загрузка " + (int) percentage + " %");
                                                             }
                                                         });
                                             } else {

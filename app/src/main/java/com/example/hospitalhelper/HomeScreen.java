@@ -198,11 +198,11 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
 
         if(timeOfDay >= 0 && timeOfDay < 12){
-            greetingTime.setText("Good Morning");
+            greetingTime.setText("Доброе утро");
         }else if(timeOfDay >= 12 && timeOfDay < 16){
-            greetingTime.setText("Good Afternoon");
+            greetingTime.setText("Добрый день");
         }else if(timeOfDay >= 16 && timeOfDay < 24) {
-            greetingTime.setText("Good Evening");
+            greetingTime.setText("Добрый вечер");
         }
     }
 

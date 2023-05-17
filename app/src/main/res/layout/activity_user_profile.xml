@@ -101,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/username_profile"
-                android:text="Hospital ID : "
+                android:text="Пользовательский ID : "
                 android:textColor="@color/intro_desription_color"
                 android:gravity="center"
                 android:fontFamily="@font/montserratmedium"/>
@@ -128,7 +128,7 @@
                 android:id="@+id/basic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Basic Information"
+                android:text="Основная информация"
                 android:textColor="@color/title_color"
                 android:fontFamily="@font/montserratbold"
                 android:textSize="@dimen/size_17dp"
@@ -160,7 +160,7 @@
                 android:id="@+id/firstname_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="First Name : "
+                android:text="Имя : "
                 android:layout_gravity="left"
                 android:fontFamily="@font/montserratmedium"
                 android:textSize="@dimen/size_12dp"
@@ -191,7 +191,7 @@
                 android:id="@+id/lastname_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Last Name : "
+                android:text="Фамилия : "
                 android:layout_gravity="left"
                 android:fontFamily="@font/montserratmedium"
                 android:textColor="@color/intro_desription_color" />
@@ -221,7 +221,7 @@
                 android:id="@+id/mobileno_profile_heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mobile No : "
+                android:text="Номер мобильного телефона : "
                 android:layout_gravity="left"
                 android:fontFamily="@font/montserratmedium"
                 android:textColor="@color/intro_desription_color" />
@@ -251,7 +251,7 @@
                 android:id="@+id/birthdate_profile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Birthdate : "
+                android:text="Дата рождения : "
                 android:layout_gravity="left"
                 android:fontFamily="@font/montserratmedium"
                 android:textColor="@color/intro_desription_color" />
@@ -281,14 +281,14 @@
                     android:layout_height="@dimen/size_35dp"
                     android:layout_marginRight="@dimen/size_20dp"
                     android:background="@drawable/button_style_six"
-                    android:text="Edit Profile"/>
+                    android:text="Изменить профиль"/>
 
                 <Button
                     android:id="@+id/logout_button"
                     android:layout_width="@dimen/size_100dp"
                     android:layout_height="@dimen/size_35dp"
                     android:layout_marginLeft="@dimen/size_20dp"
-                    android:text="Log Out"
+                    android:text="Выйти из системы"
                     android:background="@drawable/button_style_nine"/>
             </LinearLayout>
         </RelativeLayout>

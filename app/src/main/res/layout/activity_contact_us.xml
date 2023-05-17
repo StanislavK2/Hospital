@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratregular"
-                android:text="Contact Us"
+                android:text="Связаться с нами"
                 android:textColor="@color/title_color"
                 android:textSize="@dimen/size_18dp"
                 android:textStyle="bold" />
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/size_23dp"
                 android:fontFamily="@font/montserratregular"
-                android:text="Full Name"
+                android:text="Полное имя"
                 android:textColor="@color/title_color"
                 android:textSize="@dimen/size_12dp"
                 android:textStyle="bold" />
@@ -87,7 +87,7 @@
                 android:background="@drawable/edit_text_style"
                 android:backgroundTint="@color/similarwhite"
                 android:fontFamily="@font/montserratmedium"
-                android:hint="Marlin N Patterson"
+                android:hint="Александр Сидоров"
                 android:inputType="text"
                 android:padding="10dp"
                 android:text=""
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/size_23dp"
                 android:fontFamily="@font/montserratregular"
-                android:text="Mobile Number"
+                android:text="Номер мобильного телефона"
                 android:textColor="@color/title_color"
                 android:textSize="@dimen/size_12dp"
                 android:textStyle="bold" />
@@ -124,7 +124,7 @@
                 android:background="@drawable/edit_text_style"
                 android:backgroundTint="@color/similarwhite"
                 android:fontFamily="@font/montserratmedium"
-                android:hint="Ex.8090807090"
+                android:hint="8090807090"
                 android:inputType="phone"
                 android:maxLength="10"
                 android:padding="10dp"
@@ -146,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/size_23dp"
                 android:fontFamily="@font/montserratregular"
-                android:text="Email"
+                android:text="Электронная почта"
                 android:textColor="@color/title_color"
                 android:textSize="@dimen/size_12dp"
                 android:textStyle="bold" />
@@ -183,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/size_23dp"
                 android:fontFamily="@font/montserratregular"
-                android:text="Message"
+                android:text="Сообщение"
                 android:textColor="@color/title_color"
                 android:textSize="@dimen/size_12dp"
                 android:textStyle="bold" />
@@ -199,7 +199,7 @@
                 android:background="@drawable/edit_text_style"
                 android:backgroundTint="@color/similarwhite"
                 android:fontFamily="@font/montserratmedium"
-                android:hint="Message"
+                android:hint="Сообщение"
                 android:inputType="text"
                 android:padding="10dp"
                 android:text=""
@@ -222,7 +222,7 @@
                 android:layout_marginLeft="@dimen/size_23dp"
                 android:background="@drawable/button_style_four"
                 android:fontFamily="@font/montserratbold"
-                android:text="submit"
+                android:text="Отправить"
                 android:textSize="@dimen/size_12dp" />
         </RelativeLayout>
     </RelativeLayout>

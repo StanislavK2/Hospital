@@ -56,7 +56,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Let's get started !\nSign up"
+                    android:text="Давайте начнем !\nЗарегистрироваться"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_17dp"
                     android:fontFamily="@font/montserratmedium"
@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Enter your detail\nWe will help our site"
+                    android:text="Введите свои данные"
                     android:textAlignment="center"
                     android:textColor="@color/light_poison_color"
                     android:textSize="@dimen/size_14dp" />
@@ -90,7 +90,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Please Select Photo"
+                    android:text="Выберите фотографию"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_13dp"
                     android:fontFamily="@font/montserratregular"
@@ -102,7 +102,7 @@
                     android:id="@+id/profile_photo_chooser"
                     android:layout_width="@dimen/size_80dp"
                     android:layout_height="@dimen/size_30dp"
-                    android:text="Choose"
+                    android:text="Выбрать"
                     android:background="@drawable/button_style_four"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="@dimen/size_15dp"
@@ -139,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="First Name"
+                    android:text="Имя"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -156,7 +156,7 @@
                     android:fontFamily="@font/montserratmedium"
                     android:inputType="textPersonName"
                     android:padding="10dp"
-                    android:hint="Marlin"
+                    android:hint="Александр"
                     android:textColorHint="@color/tab_indicator_grey"
                     android:backgroundTint="@color/similarwhite"
                     android:textColor="@color/title_color" />
@@ -175,7 +175,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Last Name"
+                    android:text="Фамилия"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -194,7 +194,7 @@
                     android:padding="10dp"
                     android:backgroundTint="@color/similarwhite"
                     android:text=""
-                    android:hint="Patterson"
+                    android:hint="Сидоров"
                     android:textColorHint="@color/tab_indicator_grey"
                     android:textColor="@color/title_color" />
             </RelativeLayout>
@@ -212,7 +212,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Email"
+                    android:text="Почтовый адрес"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -249,7 +249,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Mobile Number"
+                    android:text="Номер мобильного телефона"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -269,7 +269,7 @@
                     android:maxLength="10"
                     android:backgroundTint="@color/similarwhite"
                     android:text=""
-                    android:hint="Ex.8090807090"
+                    android:hint="8090807090"
                     android:textColorHint="@color/tab_indicator_grey"
                     android:textColor="@color/title_color" />
             </RelativeLayout>
@@ -287,7 +287,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Gender"
+                    android:text="Пол"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -311,7 +311,7 @@
                         android:id="@+id/radiomale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Male"
+                        android:text="Мужчина"
                         android:padding="8dp"
                         android:textStyle="bold"
                         android:layout_marginLeft="@dimen/size_50dp"
@@ -325,7 +325,7 @@
                         android:id="@+id/radiofemale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Female"
+                        android:text="Женский"
                         android:padding="16dp"
                         android:layout_marginLeft="@dimen/size_46dp"
                         android:buttonTint="@color/light_poison_color"
@@ -350,7 +350,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Birthdate"
+                    android:text="Дата рождения"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -369,7 +369,7 @@
                     android:padding="@dimen/size_10dp"
                     android:backgroundTint="@color/similarwhite"
                     android:text=""
-                    android:hint="Ex.01/01/2020"
+                    android:hint="01/01/2020"
                     android:textColorHint="@color/tab_indicator_grey"
                     android:textColor="@color/title_color" />
 
@@ -388,7 +388,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Password"
+                    android:text="Пароль"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -407,7 +407,7 @@
                     android:padding="@dimen/size_10dp"
                     android:backgroundTint="@color/similarwhite"
                     android:text=""
-                    android:hint="Marlin@123"
+                    android:hint="Aleksandr@123"
                     android:textColorHint="@color/tab_indicator_grey"
                     android:textColor="@color/title_color" />
             </RelativeLayout>
@@ -427,7 +427,7 @@
                     android:layout_marginRight="@dimen/size_25dp"
                     android:background="@drawable/button_style_four"
                     android:fontFamily="@font/montserratbold"
-                    android:text="Join us"
+                    android:text="Присоединяйтесь к нам"
                     android:textSize="@dimen/size_12dp" />
             </RelativeLayout>
 
@@ -440,7 +440,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="By continuing, you agree to accept our\nPrivacy Policy and Terms of Service"
+                    android:text="Продолжая, вы соглашаетесь принять нашу\nПолитику конфиденциальности и Условия предоставления услуг."
                     android:textColor="@color/title_color"
                     android:textAlignment="center"
                     android:textSize="@dimen/size_11dp"

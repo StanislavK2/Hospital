@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome, Back!\nLogin"
+                android:text="C возвращением!\nАвторизация"
                 android:textColor="@color/title_color"
                 android:textSize="@dimen/size_17dp"
                 android:fontFamily="@font/montserratmedium"
@@ -58,7 +58,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Enter your login details to\naccess your account"
+                android:text="Введите данные для входа в систему,\nчтобы получить доступ к своей учетной записи"
                 android:textColor="@color/light_poison_color"
                 android:textAlignment="center"
                 android:textSize="@dimen/size_14dp"
@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Email"
+                    android:text="Электронный адрес"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -113,7 +113,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_23dp"
                     android:fontFamily="@font/montserratregular"
-                    android:text="Password"
+                    android:text="Пароль"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_12dp" />
@@ -143,7 +143,7 @@
                     android:layout_marginRight="@dimen/size_22dp"
                     android:fontFamily="@font/montserratregular"
                     android:gravity="right"
-                    android:text="Forgotten Password?"
+                    android:text="Забыли пароль?"
                     android:textStyle="bold"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_11dp" />
@@ -163,7 +163,7 @@
                      android:layout_marginLeft="@dimen/size_23dp"
                      android:background="@drawable/button_style_two"
                      android:fontFamily="@font/montserratbold"
-                     android:text="LOG IN"
+                     android:text="ВОЙТИ В СИСТЕМУ"
                      android:textSize="@dimen/size_12dp" />
              </RelativeLayout>
 
@@ -180,7 +180,7 @@
                     android:id="@+id/account_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Don't have an account?"
+                    android:text="У вас нет аккаунта?"
                     android:textColor="@color/text_color"
                     android:fontFamily="@font/montserratmedium"
                     android:textSize="@dimen/size_11dp" />
@@ -189,7 +189,7 @@
                     android:id="@+id/signup_link"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sign Up"
+                    android:text="Зарегистрироваться"
                     android:fontFamily="@font/montserratmedium"
                     android:textColor="@color/link_color"
                     android:textSize="@dimen/size_11dp" />

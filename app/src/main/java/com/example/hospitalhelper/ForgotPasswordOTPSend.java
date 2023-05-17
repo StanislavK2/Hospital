@@ -57,12 +57,12 @@ public class ForgotPasswordOTPSend extends AppCompatActivity {
                         mobile.startsWith("4") ||  mobile.startsWith("5") || mobile.startsWith("0")){
 
 
-                    inputMobileNo.setError("Enter Valid Mobile No!");
+                    inputMobileNo.setError("Введите действительный номер мобильного телефона!");
                     inputMobileNo.requestFocus();
                     return;
                 }
                 /*progress_bar.setVisibility(View.VISIBLE);*/
-                mprogress.setMessage("Please wait check in Server");
+                mprogress.setMessage("Пожалуйста, подождите, регистрация на сервере");
                 mprogress.show();
 
                 // Check Weather user exist or not in database
@@ -94,7 +94,7 @@ public class ForgotPasswordOTPSend extends AppCompatActivity {
 
                                         @Override
                                         public void onCodeSent(@NonNull String verificationId, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
-                                            mprogress.setMessage("Please Wait...");
+                                            mprogress.setMessage("Пожалуйста, подождите...");
                                             mprogress.show();
                                             buttonGetOTP.setVisibility(View.GONE);
                                             Intent i = new Intent(getApplicationContext(),ForgotpasswordOTPVerification.class);
@@ -110,7 +110,7 @@ public class ForgotPasswordOTPSend extends AppCompatActivity {
                         }
                         else {
                             mprogress.dismiss();
-                            inputMobileNo.setError("No such user exist!");
+                            inputMobileNo.setError("Такого пользователя не существует!");
                             inputMobileNo.requestFocus();
                         }
                     }

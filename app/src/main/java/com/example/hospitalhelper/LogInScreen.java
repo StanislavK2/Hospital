@@ -112,7 +112,7 @@ public class LogInScreen extends AppCompatActivity {
                             else {
                                 mprogress.dismiss();
                                 password_edittext.setText("");
-                                Toast.makeText(getApplicationContext(),"Invalid email/password",Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(),"Неверный email/пароль",Toast.LENGTH_LONG).show();
                             }
                         }
                     });
@@ -127,19 +127,19 @@ public class LogInScreen extends AppCompatActivity {
 
         if(email.isEmpty())
         {
-            email_edittext.setError("Email is required");
+            email_edittext.setError("Требуется электронная почта");
             email_edittext.requestFocus();
             return false;
         }
         else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
         {
-            email_edittext.setError("Provide valid email");
+            email_edittext.setError("Укажите действительную электронную почту");
             email_edittext.requestFocus();
             return false;
         }
         else if(password.isEmpty())
         {
-            password_edittext.setError("Enter Password");
+            password_edittext.setError("Введите пароль");
             password_edittext.requestFocus();
             return false;
         }

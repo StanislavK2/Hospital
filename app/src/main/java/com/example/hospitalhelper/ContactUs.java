@@ -130,13 +130,13 @@ public class ContactUs extends AppCompatActivity {
         }
         else if(email.isEmpty())
         {
-            emailEt.setError("Email is required");
+            emailEt.setError("Требуется электронная почта");
             emailEt.requestFocus();
             return false;
         }
         else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
         {
-            emailEt.setError("Provide valid email");
+            emailEt.setError("Укажите действительную электронную почту");
             emailEt.requestFocus();
             return false;
         }

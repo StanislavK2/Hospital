@@ -219,7 +219,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
                     verifybutton.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
-                            Toast.makeText(HomeScreen.this,"Varification Email has been send",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(HomeScreen.this,"Электронное письмо с подтверждением было отправлено",Toast.LENGTH_SHORT).show();
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
@@ -328,7 +328,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     public void onBackPressed() {
         counter++;
         if (counter == 1){
-            Toast.makeText(this,"double backpress exit the apps",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"двойное нажатие кнопки назад для выхода из приложения",Toast.LENGTH_LONG).show();
         }
         else if (counter == 3){
             super.onBackPressed();

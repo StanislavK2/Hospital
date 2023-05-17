@@ -108,7 +108,7 @@ public class SignUpScreen extends AppCompatActivity{
                             public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
                                 Intent intent = new Intent(Intent.ACTION_PICK);
                                 intent.setType("image/*");
-                                startActivityForResult(Intent.createChooser(intent,"Select Profile Photo"),1);
+                                startActivityForResult(Intent.createChooser(intent,"Выберите фотографию профиля"),1);
                                 overridePendingTransition(0,0);
                             }
 
@@ -195,7 +195,7 @@ public class SignUpScreen extends AppCompatActivity{
                                             emailverify.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                                                 @Override
                                                 public void onSuccess(Void aVoid) {
-                                                    Toast.makeText(SignUpScreen.this, "Varification Email has been send", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(SignUpScreen.this, "Электронное письмо с подтверждением было отправлено", Toast.LENGTH_SHORT).show();
                                                 }
                                             }).addOnFailureListener(new OnFailureListener() {
                                                 @Override
@@ -206,7 +206,7 @@ public class SignUpScreen extends AppCompatActivity{
                                             });
 
                                             ProgressDialog dialog = new ProgressDialog(SignUpScreen.this);
-                                            dialog.setTitle("File Uploader");
+                                            dialog.setTitle("Загрузчик файлов");
                                             dialog.setCancelable(false);
                                             dialog.show();
 
@@ -240,7 +240,7 @@ public class SignUpScreen extends AppCompatActivity{
                                                                         root1.child(user).setValue(newUserHelper1);
 
 
-                                                                        Toast.makeText(SignUpScreen.this, "Registration Successfull", Toast.LENGTH_LONG).show();
+                                                                        Toast.makeText(SignUpScreen.this, "Регистрация успешна", Toast.LENGTH_LONG).show();
 
                                                                         Intent i = new Intent(SignUpScreen.this, LogInScreen.class);
                                                                         startActivity(i);
@@ -259,7 +259,7 @@ public class SignUpScreen extends AppCompatActivity{
                                                         });
                                             } else {
                                                 dialog.dismiss();
-                                                Toast.makeText(SignUpScreen.this, "Please Select Image", Toast.LENGTH_LONG).show();
+                                                Toast.makeText(SignUpScreen.this, "Пожалуйста, выберите изображение", Toast.LENGTH_LONG).show();
                                             }
                                         }
                                     }
@@ -288,58 +288,58 @@ public class SignUpScreen extends AppCompatActivity{
 
         if(firstname.isEmpty())
         {
-            FirstName.setError("Enter First Name");
+            FirstName.setError("Введите имя и фамилию");
             FirstName.requestFocus();
             return false;
         }
         else if(lastname.isEmpty())
         {
-            LastName.setError("Enter Last Name");
+            LastName.setError("Введите фамилию");
             LastName.requestFocus();
             return false;
         }
         else if(email.isEmpty())
         {
-            Emails.setError("Email is required");
+            Emails.setError("Требуется электронная почта");
             Emails.requestFocus();
             return false;
         }
         else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches())
         {
-            Emails.setError("Provide valid email");
+            Emails.setError("Укажите действительную электронную почту");
             Emails.requestFocus();
             return false;
         }
         else if(mobileno.isEmpty())
         {
-            MobileNo.setError("Enter MobileNo");
+            MobileNo.setError("Введите номер мобильного телефона");
             MobileNo.requestFocus();
             return false;
         }
         else if (mobileno.length() == 0 || mobileno.length() == 1 || mobileno.length() == 2 || mobileno.length() == 3 || mobileno.length() == 4 || mobileno.length() == 5 || mobileno.length() == 6 || mobileno.length() == 7 || mobileno.length() == 8 || mobileno.length() == 9)
         {
-            MobileNo.setError("Enter Valid MobileNo");
+            MobileNo.setError("Введите действительный номер мобильного телефона");
             MobileNo.requestFocus();
             return false;
         }
         else if (GenderButtonGroup.getCheckedRadioButtonId() == -1){
-            Toast.makeText(getApplicationContext(), "Select Gender", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Выберите пол", Toast.LENGTH_SHORT).show();
         }
         else if(birthdate.isEmpty())
         {
-            BirthDate.setError("Enter Birthdate");
+            BirthDate.setError("Введите дату рождения");
             BirthDate.requestFocus();
             return false;
         }
         else if(password.isEmpty())
         {
-            Passwords.setError("Enter Password");
+            Passwords.setError("Введите пароль");
             Passwords.requestFocus();
             return false;
         }
         else  if (!password.matches( "^(?=.*[0-9])(?=.*[a-z])(?=.*[!@#$%^&*+=?-]).{8,15}$") || !password.matches( "^(?=.*[0-9])(?=.*[a-z])(?=.*[!@#$%^&*+=?-]).{8,15}$"))
         {
-            Passwords.setError("Enter Strong Password");
+            Passwords.setError("Введите надежный пароль");
             Passwords.requestFocus();
             return false;
         }

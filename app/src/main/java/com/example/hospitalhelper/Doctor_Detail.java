@@ -169,8 +169,8 @@ public class Doctor_Detail extends AppCompatActivity {
 
     private void FirebaseFatchAndUploadData() {
         ProgressDialog dialog = new ProgressDialog(Doctor_Detail.this);
-        dialog.setTitle("Submitting");
-        dialog.setMessage("one more time click BOOK APPOINMENT");
+        dialog.setTitle("Представление");
+        dialog.setMessage("еще раз нажмите кнопку ЗАКАЗАТЬ ПРИЕМ");
         dialog.setCancelable(false);
         dialog.show();
 

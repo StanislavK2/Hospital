@@ -38,7 +38,7 @@ public class ForgotpasswordActivity extends AppCompatActivity {
             public void onClick(View v) {
                         final String password = newPassword.getText().toString().trim();
 
-                        mprogress.setMessage("Please Wait...");
+                        mprogress.setMessage("Пожалуйста, подождите...");
                         mprogress.show();
 
                         // Storedata in Realtime Database
@@ -55,7 +55,7 @@ public class ForgotpasswordActivity extends AppCompatActivity {
                                 dataSnapshot.getRef().child("password").setValue(password);
                                 /*dataSnapshot.child("Patients").child(user).child("password").setValue(password);*/
 
-                                Toast.makeText(ForgotpasswordActivity.this, "Uploaded New Password", Toast.LENGTH_LONG).show();
+                                Toast.makeText(ForgotpasswordActivity.this, "Загружен новый пароль", Toast.LENGTH_LONG).show();
 
                                 Intent i = new Intent(ForgotpasswordActivity.this, LogInScreen.class);
                                 startActivity(i);

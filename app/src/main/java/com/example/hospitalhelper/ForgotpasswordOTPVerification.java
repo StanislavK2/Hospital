@@ -81,7 +81,7 @@ public class ForgotpasswordOTPVerification extends AppCompatActivity {
                 || inputcode5.getText().toString().trim().isEmpty()
                 || inputcode6.getText().toString().trim().isEmpty()){
 
-                    Toast.makeText(ForgotpasswordOTPVerification.this,"Please Enter Valid Code",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ForgotpasswordOTPVerification.this,"Пожалуйста, введите действительный код",Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -94,7 +94,7 @@ public class ForgotpasswordOTPVerification extends AppCompatActivity {
                                 inputcode6.getText().toString();
 
                 if (verificationId != null){
-                    mprogress.setMessage("Please Wait...");
+                    mprogress.setMessage("Пожалуйста, подождите...");
                     mprogress.show();
                     buttonVerify.setVisibility(View.INVISIBLE);
                     PhoneAuthCredential phoneAuthCredential = PhoneAuthProvider.getCredential(
@@ -112,7 +112,7 @@ public class ForgotpasswordOTPVerification extends AppCompatActivity {
                                         startActivity(new Intent(ForgotpasswordOTPVerification.this,ForgotpasswordActivity.class));
                                         finish();
                                     }else {
-                                        Toast.makeText(ForgotpasswordOTPVerification.this,"The varification code entered was invalid!",Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(ForgotpasswordOTPVerification.this,"Введенный проверочный код недействителен!",Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
@@ -141,7 +141,7 @@ public class ForgotpasswordOTPVerification extends AppCompatActivity {
                             @Override
                             public void onCodeSent(@NonNull String newverificationId, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                                 verificationId = newverificationId;
-                                Toast.makeText(ForgotpasswordOTPVerification.this,"OTP sent",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ForgotpasswordOTPVerification.this,"ОТП отправлен",Toast.LENGTH_SHORT).show();
                             }
                         }
                 );

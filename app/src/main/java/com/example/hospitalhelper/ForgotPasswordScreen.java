@@ -63,7 +63,7 @@ public class ForgotPasswordScreen extends AppCompatActivity {
 
         if(email.isEmpty())
         {
-            forgot_email_edittext.setError("Email is required");
+            forgot_email_edittext.setError("Требуется электронная почта");
             forgot_email_edittext.requestFocus();
             return;
         }

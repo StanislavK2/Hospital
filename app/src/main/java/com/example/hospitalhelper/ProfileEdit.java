@@ -92,7 +92,7 @@ public class ProfileEdit extends AppCompatActivity {
                             public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
                                 Intent intent = new Intent(Intent.ACTION_PICK);
                                 intent.setType("image/*");
-                                startActivityForResult(Intent.createChooser(intent,"Select Profile Photo"),1);
+                                startActivityForResult(Intent.createChooser(intent,"Выберите фотографию профиля"),1);
                                 overridePendingTransition(0,0);
                             }
 
@@ -178,7 +178,7 @@ public class ProfileEdit extends AppCompatActivity {
             final String Birthdate = edit_birthdate.getText().toString().trim();
 
             ProgressDialog dialog = new ProgressDialog(ProfileEdit.this);
-            dialog.setTitle("File Uploader");
+            dialog.setTitle("Загрузчик файлов");
             dialog.setCancelable(false);
             dialog.show();
 
@@ -205,7 +205,7 @@ public class ProfileEdit extends AppCompatActivity {
                                         root.child(user).setValue(newUserHelper);
 
 
-                                        Toast.makeText(ProfileEdit.this, "Upload Data Successfully", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(ProfileEdit.this, "Успешная загрузка данных", Toast.LENGTH_LONG).show();
 
                                         Intent i = new Intent(ProfileEdit.this, UserProfile.class);
                                         startActivity(i);
@@ -224,7 +224,7 @@ public class ProfileEdit extends AppCompatActivity {
                         });
             } else {
                 dialog.dismiss();
-                Toast.makeText(ProfileEdit.this, "Please Select Image", Toast.LENGTH_LONG).show();
+                Toast.makeText(ProfileEdit.this, "Пожалуйста, выберите изображение", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -239,31 +239,31 @@ public class ProfileEdit extends AppCompatActivity {
 
         if(firstname.isEmpty())
         {
-            edit_firstname.setError("Enter First Name");
+            edit_firstname.setError("Введите имя");
             edit_firstname.requestFocus();
             return false;
         }
         else if(lastname.isEmpty())
         {
-            edit_lastname.setError("Enter Last Name");
+            edit_lastname.setError("Введите фамилию");
             edit_lastname.requestFocus();
             return false;
         }
         else if(mobileno.isEmpty())
         {
-            edit_mobileno.setError("Enter MobileNo");
+            edit_mobileno.setError("Введите номер мобильного телефона");
             edit_mobileno.requestFocus();
             return false;
         }
         else if (mobileno.length() == 0 || mobileno.length() == 1 || mobileno.length() == 2 || mobileno.length() == 3 || mobileno.length() == 4 || mobileno.length() == 5 || mobileno.length() == 6 || mobileno.length() == 7 || mobileno.length() == 8 || mobileno.length() == 9)
         {
-            edit_mobileno.setError("Enter Valid MobileNo");
+            edit_mobileno.setError("Введите действительный номер мобильного телефона");
             edit_mobileno.requestFocus();
             return false;
         }
         else if(birthdate.isEmpty())
         {
-            edit_birthdate.setError("Enter Birthdate");
+            edit_birthdate.setError("Введите дату рождения");
             edit_birthdate.requestFocus();
             return false;
         }

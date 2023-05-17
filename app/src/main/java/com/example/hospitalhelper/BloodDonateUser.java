@@ -85,14 +85,14 @@ public class BloodDonateUser extends AppCompatActivity {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     if (snapshot.exists()) {
                         Log.e("Mobile NO snapahot","IF>");
-                        mobileEt.setError("such user exist!");
+                        mobileEt.setError("такой пользователь существует!");
                         mobileEt.requestFocus();
                         //d.dismiss();
                     } else {
                         // Storedata in Realtime Database
                         ProgressDialog dialog = new ProgressDialog(BloodDonateUser.this);
-                        dialog.setTitle("Submitting");
-                        dialog.setMessage("Wait...");
+                        dialog.setTitle("Отправка");
+                        dialog.setMessage("Подождите...");
                         dialog.setCancelable(false);
                         dialog.show();
 
@@ -109,7 +109,7 @@ public class BloodDonateUser extends AppCompatActivity {
                                 root.child(user).setValue(bloodDonateRequestUser);
 
 
-                                Toast.makeText(BloodDonateUser.this, "Requested", Toast.LENGTH_LONG).show();
+                                Toast.makeText(BloodDonateUser.this, "Запрошено", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(BloodDonateUser.this,HomeScreen.class);
                                 startActivity(intent);
                                 overridePendingTransition(0,0);
@@ -140,19 +140,19 @@ public class BloodDonateUser extends AppCompatActivity {
 
         if(fullname.isEmpty())
         {
-            fullnameEt.setError("Please Enter Fullname");
+            fullnameEt.setError("Пожалуйста, введите полное имя");
             fullnameEt.requestFocus();
             return false;
         }
         else if(mobileno.isEmpty())
         {
-            mobileEt.setError("Enter MobileNo");
+            mobileEt.setError("Введите номер мобильного телефона");
             mobileEt.requestFocus();
             return false;
         }
         else if (mobileno.length() == 0 || mobileno.length() == 1 || mobileno.length() == 2 || mobileno.length() == 3 || mobileno.length() == 4 || mobileno.length() == 5 || mobileno.length() == 6 || mobileno.length() == 7 || mobileno.length() == 8 || mobileno.length() == 9)
         {
-            mobileEt.setError("Enter Valid MobileNo");
+            mobileEt.setError("Введите действительный номер мобильного телефона");
             mobileEt.requestFocus();
             return false;
         }
@@ -170,17 +170,17 @@ public class BloodDonateUser extends AppCompatActivity {
         }
         else if(ageB.isEmpty())
         {
-            age.setError("Enter Age");
+            age.setError("Введите возраст");
             age.requestFocus();
             return false;
         }
         else if (GenderButtonGroup.getCheckedRadioButtonId() == -1)
         {
-            Toast.makeText(getApplicationContext(),"Select Your Gender",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Выберите свой пол",Toast.LENGTH_LONG).show();
         }
         else if(bloodgroup.isEmpty())
         {
-            bloodgroupET.setError("Enter bloodGroup");
+            bloodgroupET.setError("Введите группу крови");
             bloodgroupET.requestFocus();
             return false;
         }

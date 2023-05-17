@@ -112,19 +112,19 @@ public class ContactUs extends AppCompatActivity {
 
         if(fullname.isEmpty())
         {
-            fullnameEt.setError("Please Enter Fullname");
+            fullnameEt.setError("Пожалуйста, введите полное имя");
             fullnameEt.requestFocus();
             return false;
         }
         else if(mobileno.isEmpty())
         {
-            mobileEt.setError("Enter MobileNo");
+            mobileEt.setError("Введите номер мобильного телефона");
             mobileEt.requestFocus();
             return false;
         }
         else if (mobileno.length() == 0 || mobileno.length() == 1 || mobileno.length() == 2 || mobileno.length() == 3 || mobileno.length() == 4 || mobileno.length() == 5 || mobileno.length() == 6 || mobileno.length() == 7 || mobileno.length() == 8 || mobileno.length() == 9)
         {
-            mobileEt.setError("Enter Valid MobileNo");
+            mobileEt.setError("Введите действительный номер мобильного телефона");
             mobileEt.requestFocus();
             return false;
         }
@@ -142,7 +142,7 @@ public class ContactUs extends AppCompatActivity {
         }
         else if(msg.isEmpty())
         {
-            message.setError("Message is required");
+            message.setError("Сообщение обязательно");
             message.requestFocus();
             return false;
         }

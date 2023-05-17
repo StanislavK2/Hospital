@@ -51,7 +51,7 @@
                         android:id="@+id/edit_profile_textview"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Edit Profile"
+                        android:text="Редактировать профиль"
                         android:textColor="@color/title_color"
                         android:fontFamily="@font/montserratmedium"
                         android:textSize="@dimen/size_20dp"/>
@@ -67,7 +67,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Please Select Photo"
+                        android:text="Выберите фотографию"
                         android:textColor="@color/title_color"
                         android:textSize="@dimen/size_13dp"
                         android:fontFamily="@font/montserratregular"
@@ -79,7 +79,7 @@
                         android:id="@+id/eiditprofile_photo_chooser"
                         android:layout_width="@dimen/size_80dp"
                         android:layout_height="@dimen/size_30dp"
-                        android:text="Choose"
+                        android:text="Выбрать"
                         android:background="@drawable/button_style_four"
                         android:layout_alignParentEnd="true"
                         android:layout_marginEnd="@dimen/size_15dp"
@@ -116,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_23dp"
                         android:fontFamily="@font/montserratregular"
-                        android:text="First Name"
+                        android:text="Имя"
                         android:textStyle="bold"
                         android:textColor="@color/title_color"
                         android:textSize="@dimen/size_12dp" />
@@ -133,7 +133,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:inputType="textPersonName"
                         android:padding="10dp"
-                        android:hint="Marlin"
+                        android:hint="Александр"
                         android:textColorHint="@color/tab_indicator_grey"
                         android:backgroundTint="@color/similarwhite"
                         android:textColor="@color/title_color" />
@@ -152,7 +152,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_23dp"
                         android:fontFamily="@font/montserratregular"
-                        android:text="Last Name"
+                        android:text="Фамилия"
                         android:textStyle="bold"
                         android:textColor="@color/title_color"
                         android:textSize="@dimen/size_12dp" />
@@ -171,7 +171,7 @@
                         android:padding="10dp"
                         android:backgroundTint="@color/similarwhite"
                         android:text=""
-                        android:hint="Patterson"
+                        android:hint="Дроздов"
                         android:textColorHint="@color/tab_indicator_grey"
                         android:textColor="@color/title_color" />
                 </RelativeLayout>
@@ -189,7 +189,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_23dp"
                         android:fontFamily="@font/montserratregular"
-                        android:text="Mobile Number"
+                        android:text="Номер мобильного телефона"
                         android:textStyle="bold"
                         android:textColor="@color/title_color"
                         android:textSize="@dimen/size_12dp" />
@@ -209,7 +209,7 @@
                         android:maxLength="10"
                         android:backgroundTint="@color/similarwhite"
                         android:text=""
-                        android:hint="Ex.8090807090"
+                        android:hint="8090807090"
                         android:textColorHint="@color/tab_indicator_grey"
                         android:textColor="@color/title_color" />
                 </RelativeLayout>
@@ -227,7 +227,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/size_23dp"
                         android:fontFamily="@font/montserratregular"
-                        android:text="Birthdate"
+                        android:text="Дата рождения"
                         android:textStyle="bold"
                         android:textColor="@color/title_color"
                         android:textSize="@dimen/size_12dp" />
@@ -246,7 +246,7 @@
                         android:padding="@dimen/size_10dp"
                         android:backgroundTint="@color/similarwhite"
                         android:text=""
-                        android:hint="Ex.01/01/2020"
+                        android:hint="01/01/2020"
                         android:textColorHint="@color/tab_indicator_grey"
                         android:textColor="@color/title_color" />
 
@@ -268,7 +268,7 @@
                         android:layout_marginRight="@dimen/size_25dp"
                         android:background="@drawable/button_style_four"
                         android:fontFamily="@font/montserratbold"
-                        android:text="Save"
+                        android:text="Сохранить"
                         android:textSize="@dimen/size_12dp" />
                 </RelativeLayout>
             </RelativeLayout>

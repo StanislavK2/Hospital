@@ -135,29 +135,29 @@ public class Doctor_Detail extends AppCompatActivity {
 
     private String getMonthFormate(int month) {
         if (month == 1)
-            return "JAN";
+            return "Январь";
         if (month == 2)
-            return "FEB";
+            return "Ферваль";
         if (month == 3)
-            return "MAR";
+            return "Март";
         if (month == 4)
-            return "APR";
+            return "Апрель";
         if (month == 5)
-            return "MAY";
+            return "Май";
         if (month == 6)
-            return "JUN";
+            return "Июнь";
         if (month == 7)
-            return "JUL";
+            return "Июль";
         if (month == 8)
-            return "AUG";
+            return "Август";
         if (month == 9)
-            return "SEP";
+            return "Сентябрь";
         if (month == 10)
-            return "OCT";
+            return "Октябрь";
         if (month == 11)
-            return "NOV";
+            return "Ноябрь";
         if (month == 12)
-            return "DEC";
+            return "Декабрь";
 
         // default should never happer
         return "JAN";
@@ -169,8 +169,8 @@ public class Doctor_Detail extends AppCompatActivity {
 
     private void FirebaseFatchAndUploadData() {
         ProgressDialog dialog = new ProgressDialog(Doctor_Detail.this);
-        dialog.setTitle("Представление");
-        dialog.setMessage("еще раз нажмите кнопку ЗАКАЗАТЬ ПРИЕМ");
+        dialog.setTitle("Подождите");
+        dialog.setMessage("Мы записываем вас на приём...");
         dialog.setCancelable(false);
         dialog.show();
 

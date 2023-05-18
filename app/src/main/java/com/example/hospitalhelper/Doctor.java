@@ -79,6 +79,7 @@ public class Doctor extends AppCompatActivity {
 
     private void product() {
         final Query query = mdatabaseref.child("Doctor_List");
+        System.out.println(query);
         query.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

@@ -70,8 +70,8 @@ public class ContactUs extends AppCompatActivity {
             final String msg = message.getText().toString();
 
             ProgressDialog dialog = new ProgressDialog(ContactUs.this);
-            dialog.setTitle("Submit");
-            dialog.setMessage("Wait...");
+            dialog.setTitle("Отправка");
+            dialog.setMessage("Подождите...");
             dialog.setCancelable(false);
             dialog.show();
 

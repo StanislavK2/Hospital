@@ -30,7 +30,7 @@ import java.util.Calendar;
 public class Doctor_Detail extends AppCompatActivity {
 
     String DoctorImage;
-    String DoctorName,DoctorQualification,DoctorType,DoctorTime;
+    String DoctorName, DoctorQualification, DoctorType, DoctorTime;
 
     Button bookDoctor;
     ImageView backButton;
@@ -45,7 +45,7 @@ public class Doctor_Detail extends AppCompatActivity {
     TextView doctorType;
     TextView doctorTime;
 
-    String FirstName,LastrName,MobileNo,BirthDate,url;
+    String FirstName, LastrName, MobileNo, BirthDate, url;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +81,7 @@ public class Doctor_Detail extends AppCompatActivity {
         doctorType.setText(DoctorType);
         doctorTime.setText(DoctorTime);
 
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,7 +105,7 @@ public class Doctor_Detail extends AppCompatActivity {
         int month = cal.get(Calendar.MONTH);
         month = month + 1;
         int day = cal.get(Calendar.DAY_OF_MONTH);
-        return makeDateString(day,month,year);
+        return makeDateString(day, month, year);
     }
 
     private void initDatePicker() {
@@ -112,7 +113,7 @@ public class Doctor_Detail extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                 month = month + 1;
-                String date = makeDateString(dayOfMonth,month,year);
+                String date = makeDateString(dayOfMonth, month, year);
                 DoctorBook_pick_button.setText(date);
                 DoctorBookDate = date;
             }
@@ -202,23 +203,22 @@ public class Doctor_Detail extends AppCompatActivity {
                     public void onCancelled(@NonNull DatabaseError error) {
                     }
                 });
-
                 // Store in Realtime Database #RootName : DoctorAppoimentDatail
-                database = FirebaseDatabase.getInstance();
-                reference = database.getReference("DoctorAppoimentDatail");
+                DatabaseReference reference2 = database.getReference("DoctorAppoimentDatail");
 
                 String user = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-                DoctorAppoimentDataHolder appoimentDataHolder = new DoctorAppoimentDataHolder(FirstName,LastrName,MobileNo,BirthDate,url,user,DoctorBookDate,DoctorName,DoctorQualification,DoctorType,DoctorTime,DoctorImage);
-                reference.child(user).setValue(appoimentDataHolder);
+                DoctorAppoimentDataHolder appoimentDataHolder = new DoctorAppoimentDataHolder(FirstName, LastrName, MobileNo, BirthDate, url, user, DoctorBookDate, DoctorName, DoctorQualification, DoctorType, DoctorTime, DoctorImage);
+                reference2.child(user).setValue(appoimentDataHolder);
                 dialog.dismiss();
             }
-        },2500);
+        }, 2500);
     }
-    public void onBackPressed(){
-        Intent i = new Intent(Doctor_Detail.this,Doctor.class);
+
+    public void onBackPressed() {
+        Intent i = new Intent(Doctor_Detail.this, Doctor.class);
         startActivity(i);
-        overridePendingTransition(0,0);
+        overridePendingTransition(0, 0);
         finish();
     }
 }

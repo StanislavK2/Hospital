@@ -31,7 +31,7 @@
             <RelativeLayout
                 android:id="@+id/main_relative"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/size_245dp"
+                android:layout_height="@dimen/size_265dp"
                 android:background="@drawable/background">
 
                 <RelativeLayout
@@ -114,7 +114,7 @@
                         android:layout_marginTop="@dimen/size_5dp"
                         android:layout_marginRight="@dimen/size_60dp"
                         android:fontFamily="@font/montserratsemibold"
-                        android:text="Подтвердите адрес электронной почты"
+                        android:text="Подтвердите почту"
                         android:layout_marginLeft="@dimen/size_10dp"
                         android:textColor="@color/title_color"
                         android:textSize="@dimen/size_13dp"
@@ -135,13 +135,18 @@
 
                 <Button
                     android:id="@+id/profile_button"
-                    android:layout_width="@dimen/size_100dp"
-                    android:layout_height="@dimen/size_25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@+id/verifyemailrelative"
                     android:text="Перейти в профиль"
+                    android:layout_centerHorizontal="true"
                     android:background="@drawable/button_style_six"
                     android:textColor="@color/colorPrimary"
-                    android:layout_marginStart="@dimen/size_25dp"/>
+                    android:layout_marginStart="@dimen/size_25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"/>
 
             </RelativeLayout>
 

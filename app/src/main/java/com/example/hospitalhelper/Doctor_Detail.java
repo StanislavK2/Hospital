@@ -161,7 +161,7 @@ public class Doctor_Detail extends AppCompatActivity {
             return "Декабрь";
 
         // default should never happer
-        return "JAN";
+        return "Январь";
     }
 
     public void openDatePicker(View view) {

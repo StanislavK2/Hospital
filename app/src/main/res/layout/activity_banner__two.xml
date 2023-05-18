@@ -48,7 +48,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Beds Facilities"
+                    android:text="Кровати"
                     android:fontFamily="@font/montserratmedium"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_18dp"/>
@@ -77,17 +77,6 @@
                 android:layout_marginEnd="@dimen/size_20dp"
                 android:layout_marginTop="@dimen/size_15dp">
 
-                <TextView
-                    android:id="@+id/txt1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/size_13dp"
-                    android:textColor="@color/text_color"
-                    android:textAlignment="center"
-                    android:fontFamily="@font/montserratmedium"
-                    android:lineSpacingExtra="@dimen/size_5dp"
-                    android:text="Type of Different-Different\nBads Available Here..."/>
-
                 <LinearLayout
                     android:id="@+id/time_linear"
                     android:layout_width="match_parent"
@@ -105,7 +94,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:textAlignment="textStart"
                         android:textColor="@color/intro_title_color"
-                        android:text="ICU With Oxegon Beds"
+                        android:text="Отделение интенсивной терапии с кроватями Oxegon"
                         android:textSize="@dimen/size_13dp"/>
 
                     <TextView
@@ -115,7 +104,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:fontFamily="@font/montserratregular"
                         android:textColor="@color/intro_desription_color"
-                        android:text="80 Beds"/>
+                        android:text="80 Кроватей"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -135,7 +124,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:textAlignment="textStart"
                         android:textColor="@color/intro_title_color"
-                        android:text="Children Medical Beds"
+                        android:text="Детские медицинские кровати"
                         android:textSize="@dimen/size_13dp"/>
 
                     <TextView
@@ -145,7 +134,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:fontFamily="@font/montserratregular"
                         android:textColor="@color/intro_desription_color"
-                        android:text="60 Beds"/>
+                        android:text="60 Кроватей"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -165,7 +154,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:textAlignment="textStart"
                         android:textColor="@color/intro_title_color"
-                        android:text="Delivery Beds"
+                        android:text="Кровати с доставкой"
                         android:textSize="@dimen/size_13dp"/>
 
                     <TextView
@@ -175,7 +164,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:fontFamily="@font/montserratregular"
                         android:textColor="@color/intro_desription_color"
-                        android:text="20 Beds"/>
+                        android:text="20 Кроватей"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -196,7 +185,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:textAlignment="textStart"
                         android:textColor="@color/intro_title_color"
-                        android:text="General Ward Beds"
+                        android:text="Койки в общих палатах"
                         android:textSize="@dimen/size_13dp"/>
 
                     <TextView
@@ -206,7 +195,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:fontFamily="@font/montserratregular"
                         android:textColor="@color/intro_desription_color"
-                        android:text="110 Beds"/>
+                        android:text="110 Кроватей"/>
                 </LinearLayout>
 
             </RelativeLayout>

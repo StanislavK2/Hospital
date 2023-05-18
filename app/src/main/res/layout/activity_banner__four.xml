@@ -48,7 +48,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Ambulance Service"
+                    android:text="Служба скорой помощи"
                     android:fontFamily="@font/montserratmedium"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_18dp"/>
@@ -87,9 +87,9 @@
                     android:textAlignment="center"
                     android:fontFamily="@font/montserratregular"
                     android:lineSpacingExtra="@dimen/size_2dp"
-                    android:text="The Kiran Hospital, Surat\noffers 24x7 ambulance facility comparising of two ambulances.\n\n
-Advanced care ambulance, meant for transportation of unstable patients, is equipped with multipara monitor, ventilator, oxygen, suction etc.\n\n
-This ambulance is manned by ACLS/BLS trained doctors, nurses with trained drivers." />
+                    android:text="Больница предлагает круглосуточную скорую помощь, сравнивая две машины.\n\n
+Машина скорой помощи, предназначенная для транспортировки нестабильных пациентов, оснащена мультипарационным монитором, аппаратом искусственной вентиляции легких, кислородом, отсосом и т.д.\n\n\n
+Эта скорая помощь укомплектована врачами, медсестрами и квалифицированными водителями." />
             </RelativeLayout>
 
         </RelativeLayout>

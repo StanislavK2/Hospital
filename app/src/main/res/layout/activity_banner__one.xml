@@ -48,7 +48,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Vaccination Available Here!"
+                    android:text="Вакцинация доступна здесь!"
                     android:fontFamily="@font/montserratmedium"
                     android:textColor="@color/title_color"
                     android:textSize="@dimen/size_18dp"/>
@@ -86,7 +86,7 @@
                     android:textAlignment="center"
                     android:fontFamily="@font/montserratmedium"
                     android:lineSpacingExtra="@dimen/size_5dp"
-                    android:text="Vaccination Available As A Goverment\nRule All Detail Describe Here... "/>
+                    android:text="Вакцинация доступна\nВсе подробности описаны здесь... "/>
 
                 <LinearLayout
                     android:id="@+id/time_linear"
@@ -105,7 +105,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:textAlignment="textStart"
                         android:textColor="@color/intro_title_color"
-                        android:text="Time :"
+                        android:text="Время :"
                         android:textSize="@dimen/size_13dp"/>
 
                     <TextView
@@ -115,7 +115,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:fontFamily="@font/montserratregular"
                         android:textColor="@color/intro_desription_color"
-                        android:text="07:00 Am to 5:00 PM"/>
+                        android:text="07:00 утра до 5:00 вечера"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -135,7 +135,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:textAlignment="textStart"
                         android:textColor="@color/intro_title_color"
-                        android:text="Place :"
+                        android:text="Место :"
                         android:textSize="@dimen/size_13dp"/>
 
                     <TextView
@@ -145,7 +145,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:fontFamily="@font/montserratregular"
                         android:textColor="@color/intro_desription_color"
-                        android:text="Sruhad Complex, 3rd Floor Doctor House\nnear Devi Cinema, Ahmedabad - 382330\nGujarat"/>
+                        android:text="Невельская, 24 Центральный район, Оренбург 460018"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -166,7 +166,7 @@
                         android:fontFamily="@font/montserratmedium"
                         android:textAlignment="textStart"
                         android:textColor="@color/intro_title_color"
-                        android:text="Type of Vaccine :"
+                        android:text="Тип вакцины :"
                         android:textSize="@dimen/size_13dp"/>
 
                     <TextView

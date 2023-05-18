@@ -197,20 +197,21 @@ public class Doctor_Detail extends AppCompatActivity {
                         BirthDate = String.valueOf(snapshot.child("birthdate").getValue());
                         //set profile in circleImageview
                         url = snapshot.child("profileimg").getValue().toString();
+
+                        // Store in Realtime Database #RootName : DoctorAppoimentDatail
+                        DatabaseReference reference2 = database.getReference("DoctorAppoimentDatail");
+
+                        String user = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+                        DoctorAppoimentDataHolder appoimentDataHolder = new DoctorAppoimentDataHolder(FirstName, LastrName, MobileNo, BirthDate, url, user, DoctorBookDate, DoctorName, DoctorQualification, DoctorType, DoctorTime, DoctorImage);
+                        reference2.child(user).setValue(appoimentDataHolder);
+                        dialog.dismiss();
                     }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
                     }
                 });
-                // Store in Realtime Database #RootName : DoctorAppoimentDatail
-                DatabaseReference reference2 = database.getReference("DoctorAppoimentDatail");
-
-                String user = FirebaseAuth.getInstance().getCurrentUser().getUid();
-
-                DoctorAppoimentDataHolder appoimentDataHolder = new DoctorAppoimentDataHolder(FirstName, LastrName, MobileNo, BirthDate, url, user, DoctorBookDate, DoctorName, DoctorQualification, DoctorType, DoctorTime, DoctorImage);
-                reference2.child(user).setValue(appoimentDataHolder);
-                dialog.dismiss();
             }
         }, 2500);
     }

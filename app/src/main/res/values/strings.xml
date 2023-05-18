@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hospital Helper</string>
+    <string name="app_name">Больница</string>
 
     <string-array name="bloodgroup">
         <item>A+</item>

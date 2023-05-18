@@ -34,7 +34,6 @@ public class LogInScreen extends AppCompatActivity {
 
     EditText email_edittext;
     EditText password_edittext;
-    TextView forgot_pass;
     Button login_button;
     TextView signup_link;
     ProgressDialog mprogress;
@@ -49,20 +48,9 @@ public class LogInScreen extends AppCompatActivity {
 
         email_edittext = findViewById(R.id.email_edittext);
         password_edittext = findViewById(R.id.password_edittext);
-        forgot_pass = findViewById(R.id.forgot_pass);
         signup_link = findViewById(R.id.signup_link);
         login_button = findViewById(R.id.login_button);
         mprogress = new ProgressDialog(this);
-
-        forgot_pass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(LogInScreen.this,ForgotPasswordScreen.class);
-                startActivity(i);
-                overridePendingTransition(0,0);
-                finish();
-            }
-        });
 
         signup_link.setOnClickListener(new View.OnClickListener() {
             @Override

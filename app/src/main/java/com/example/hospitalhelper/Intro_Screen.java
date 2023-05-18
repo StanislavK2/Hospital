@@ -22,13 +22,13 @@ import java.util.List;
 public class Intro_Screen extends AppCompatActivity {
 
     private ViewPager screenPager;
-    IntroViewPagerAdapter introViewPagerAdapter ;
+    IntroViewPagerAdapter introViewPagerAdapter;
     TabLayout tabIndicator;
 
     Button buttonNext;
-    int position = 0 ;
+    int position = 0;
     Button ButtonGetStarted;
-    Animation ButtonAnimation ;
+    Animation ButtonAnimation;
     Button ButtonSkip;
 
     @Override
@@ -43,16 +43,16 @@ public class Intro_Screen extends AppCompatActivity {
         ButtonGetStarted = findViewById(R.id.button_getstarted);
         ButtonSkip = findViewById(R.id.button_skip);
         tabIndicator = findViewById(R.id.tab_indicator);
-        ButtonAnimation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.get_started_animation_button);
+        ButtonAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.get_started_animation_button);
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Get Started In Your Check\nHealth Level,\nWelcome!\n","We can care your health and\nsave your life",R.drawable.doctor));
-        mList.add(new ScreenItem("You can get a doctor's\nAppoiment\nonline\n","The patient does not have\nto sit line in the hospital",R.drawable.hospital_admin_office));
-        mList.add(new ScreenItem("Can call a patient\ndoctor directly\n","You can get primary advice and\ninformation directly from\nthe doctor",R.drawable.doctor_suggestion));
+        mList.add(new ScreenItem("Начните с проверки вашего здоровья,\nДобро пожаловать!\n", "Мы можем позаботиться о вашем здоровье и спасти вашу жизнь.", R.drawable.doctor));
+        mList.add(new ScreenItem("Вы можете обратиться к доктору\nонлайн\n", "Пациенту не нужно\nсидеть в очереди в больнице", R.drawable.hospital_admin_office));
+        mList.add(new ScreenItem("Пациент может позвонить\nврачу напрямую\n", "Вы можете получить первичные консультации и информацию непосредственно от врача", R.drawable.doctor_suggestion));
 
         // setup viewpager
-        screenPager =findViewById(R.id.screen_viewpager);
-        introViewPagerAdapter = new IntroViewPagerAdapter(this,mList);
+        screenPager = findViewById(R.id.screen_viewpager);
+        introViewPagerAdapter = new IntroViewPagerAdapter(this, mList);
         screenPager.setAdapter(introViewPagerAdapter);
 
         tabIndicator.setupWithViewPager(screenPager);
@@ -65,7 +65,7 @@ public class Intro_Screen extends AppCompatActivity {
                     position++;
                     screenPager.setCurrentItem(position);
                 }
-                if (position == mList.size()-1) { // when we rech to the last screen
+                if (position == mList.size() - 1) { // when we rech to the last screen
                     // TODO : show the GETSTARTED Button and hide the indicator and the next button
                     loaddLastScreen();
                 }
@@ -76,9 +76,9 @@ public class Intro_Screen extends AppCompatActivity {
         tabIndicator.addOnTabSelectedListener(new TabLayout.BaseOnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                if (tab.getPosition() == mList.size()-1) {
+                if (tab.getPosition() == mList.size() - 1) {
                     loaddLastScreen();
-                }else{
+                } else {
                     visibleButton();
                 }
             }
@@ -99,9 +99,9 @@ public class Intro_Screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //open main activity
-                Intent mainActivity = new Intent(getApplicationContext(),LogInScreen.class);
+                Intent mainActivity = new Intent(getApplicationContext(), LogInScreen.class);
                 startActivity(mainActivity);
-                overridePendingTransition(0,0);
+                overridePendingTransition(0, 0);
                 savePrefsData();
                 finish();
             }
@@ -117,9 +117,9 @@ public class Intro_Screen extends AppCompatActivity {
     }
 
     private void savePrefsData() {
-        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
-        editor.putBoolean("isIntroOpnend",true);
+        editor.putBoolean("isIntroOpnend", true);
         editor.commit();
     }
 
@@ -134,6 +134,7 @@ public class Intro_Screen extends AppCompatActivity {
         // setup animation
         ButtonGetStarted.setAnimation(ButtonAnimation);
     }
+
     private void visibleButton() {
         buttonNext.setVisibility(View.VISIBLE);
         ButtonGetStarted.setVisibility(View.INVISIBLE);

@@ -27,7 +27,7 @@
                 android:id="@+id/login_logo"
                 android:layout_width="@dimen/size_70dp"
                 android:layout_height="@dimen/size_40dp"
-                android:src="@drawable/heading_logo"/>
+                app:srcCompat="@drawable/logo" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -134,19 +134,6 @@
                     android:text=""
                     android:textColor="@color/title_color" />
 
-                <TextView
-                    android:id="@+id/forgot_pass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/password_edittext"
-                    android:layout_marginTop="@dimen/size_2dp"
-                    android:layout_marginRight="@dimen/size_22dp"
-                    android:fontFamily="@font/montserratregular"
-                    android:gravity="right"
-                    android:text="Забыли пароль?"
-                    android:textStyle="bold"
-                    android:textColor="@color/title_color"
-                    android:textSize="@dimen/size_11dp" />
             </RelativeLayout>
 
              <RelativeLayout

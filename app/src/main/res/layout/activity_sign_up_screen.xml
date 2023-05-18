@@ -42,7 +42,7 @@
                     android:id="@+id/login_logo"
                     android:layout_width="@dimen/size_70dp"
                     android:layout_height="@dimen/size_40dp"
-                    android:src="@drawable/heading_logo"/>
+                    app:srcCompat="@drawable/logo" />
             </RelativeLayout>
 
             <RelativeLayout

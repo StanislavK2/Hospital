@@ -109,7 +109,7 @@ public class BloodRequest extends AppCompatActivity {
                                 root.child(user).setValue(bloodRequestUser);
 
 
-                                Toast.makeText(BloodRequest.this, "Запрошено", Toast.LENGTH_LONG).show();
+                                Toast.makeText(BloodRequest.this, "Отправлено", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(BloodRequest.this,HomeScreen.class);
                                 startActivity(intent);
                                 overridePendingTransition(0,0);

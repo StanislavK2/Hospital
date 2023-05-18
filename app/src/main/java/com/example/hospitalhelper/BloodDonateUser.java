@@ -109,7 +109,7 @@ public class BloodDonateUser extends AppCompatActivity {
                                 root.child(user).setValue(bloodDonateRequestUser);
 
 
-                                Toast.makeText(BloodDonateUser.this, "Запрошено", Toast.LENGTH_LONG).show();
+                                Toast.makeText(BloodDonateUser.this, "Отправлено", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(BloodDonateUser.this,HomeScreen.class);
                                 startActivity(intent);
                                 overridePendingTransition(0,0);

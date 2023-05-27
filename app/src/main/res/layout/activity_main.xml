@@ -14,11 +14,11 @@
         android:layout_height="wrap_content"
         android:gravity="center">
 
-    <ImageView
-        android:id="@+id/splashscreen_logo"
-        android:layout_width="@dimen/size_200dp"
-        android:layout_height="@dimen/size_85dp"
-        android:src="@drawable/splash_screen_logo"/>
+        <ImageView
+            android:id="@+id/splashscreen_logo"
+            android:layout_width="@dimen/size_200dp"
+            android:layout_height="@dimen/size_85dp"
+            app:srcCompat="@drawable/logo" />
 
     </RelativeLayout>
 
@@ -29,11 +29,12 @@
         android:layout_below="@+id/splashscreen_logo_relative"
         android:gravity="center">
 
-        <ImageView
-            android:id="@+id/hospital_helper_text"
-            android:layout_width="@dimen/size_200dp"
-            android:layout_height="@dimen/size_40dp"
-            android:src="@drawable/hospital_helper_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="К врачу"
+            android:textSize="@dimen/size_28dp"
+            android:textColor="#01B5AC"/>
     </RelativeLayout>
 
 </RelativeLayout>

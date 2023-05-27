@@ -12,8 +12,6 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView Logo;
-    ImageView HeadingText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        Logo = findViewById(R.id.splashscreen_logo);
-        HeadingText = findViewById(R.id.hospital_helper_text);
 
 
         new Handler().postDelayed(new Runnable() {
